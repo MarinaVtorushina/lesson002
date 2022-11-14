@@ -37,10 +37,73 @@
 }
 
 
-void Zadacha9()
+void Zadacha12()
 {
         // 12. Напишите программу, которая будет принимать на вход два числа и выводить, является ли второе число кратным первому. Если число 2 не кратно числу 1, то программа выводит остаток от деления.
         // 34, 5 -> не кратно, остаток 4 
         // 16, 4 -> кратно
-        
+        Random random = new Random();
+        int number1 = random.Next(10, 100); 
+        int number2 = random.Next(10, 100); 
+        Console.WriteLine(number1);
+        Console.WriteLine(number2);
+                
+        if (number2 % number1 == 0)
+        {
+            Console.WriteLine("Кратное ");
+        }
+        else
+            Console.WriteLine($"Не кратно, остаток = {number2 % number1 }");
 }
+void Zadacha14()
+{
+        //Напишите программу, которая принимает на вход число и проверяет, кратно ли оно одновременно 7 и 23.
+
+        Console.WriteLine ("Введите первое число: ");
+        int number1 = Convert.ToInt32(Console.ReadLine());
+        if (number1 % 161 == 0)
+        {
+            Console.WriteLine("Число кратное 7 и 23 " + number1);
+        }
+        else
+            Console.WriteLine("Число не кратное 7 и 23 -  " + number1);
+}
+
+void Zadacha16()
+{
+        //Напишите программу, которая принимает на вход два числа и проверяет, является ли одно число квадратом другого.
+
+        Console.WriteLine ("Введите первое число: ");
+        int number1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine ("Введите второе число: ");
+        int number2 = Convert.ToInt32(Console.ReadLine());
+        if (number1 * number1 == number2)
+        {
+            Console.WriteLine("Второе число является квадратом первого");
+        }
+        else
+            Console.WriteLine("Второе число не является квадратом первого");
+}
+void Zadacha17()
+{
+        //Напишите программу, которая принимает на вход два числа и проверяет, является ли одно число квадратом другого.
+
+        Console.WriteLine ("Введите первое число: ");
+        int number1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine ("Введите второе число: ");
+        int number2 = Convert.ToInt32(Console.ReadLine());
+        if (number1 == number2 * number2 || number2 == number1 * number1)
+        {
+            Console.WriteLine("Число является квадратом второго числа");
+        }
+        else
+            Console.WriteLine("Не является квадратом ");
+}
+void Zadacha10()
+{
+        //Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+        
+
+
+}
+Zadacha10();
