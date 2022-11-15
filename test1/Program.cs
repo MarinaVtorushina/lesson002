@@ -99,11 +99,33 @@ void Zadacha17()
         else
             Console.WriteLine("Не является квадратом ");
 }
+
 void Zadacha10()
 {
         //Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
-        
-
+        Console.WriteLine ("Введите трехзначное число: ");
+        int number = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Вторая цифра трехзначного числа " + number/10%10);
 
 }
-Zadacha10();
+void Zadacha13()
+{
+
+//Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+        Console.WriteLine ("Введите трехзначное число: ");
+        int number = Convert.ToInt32(Console.ReadLine());
+        if (number > 99)
+        {
+            while (number > 999)
+            {
+                number /=10;
+            }
+            Console.WriteLine("Третья цифра трехзначного числа " + number%10);
+
+        }
+        else
+        {
+            Console.WriteLine("Отстсвует третье число");
+        }     
+}  
+Zadacha13();
