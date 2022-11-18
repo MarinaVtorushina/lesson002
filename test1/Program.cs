@@ -128,4 +128,45 @@ void Zadacha13()
             Console.WriteLine("Отстсвует третье число");
         }     
 }  
-Zadacha13();
+void Zadacha15()
+{
+        // Напишите программу, которая будет выдавать название дня недели по заданному номеру.
+        // 	3 -> Среда 
+        // 5 -> Пятница
+
+        Console.WriteLine("Введите число, соответствующее дню недели");
+        int week = Convert.ToInt32(Console.ReadLine()); // 1 - понедельник
+        if (week == 1)
+        {
+            Console.WriteLine("Понедельник");
+        }
+        if (week == 2)
+        {
+            Console.WriteLine("Вторник");
+        }
+        if (week == 3)
+        {
+            Console.WriteLine("Среда");
+        }
+        if (week == 4)
+        {
+            Console.WriteLine("Четверг");
+        }
+        if (week == 5)
+        {
+            Console.WriteLine("Пятница");
+        }
+        if (week == 6)
+        {
+            Console.WriteLine("Суббота");
+        }
+        if (week == 7)
+        {
+            Console.WriteLine("Воскресенье");
+        }
+        
+        {
+            Console.WriteLine("Нет такого дня недели");
+        }
+}
+Zadacha15();
